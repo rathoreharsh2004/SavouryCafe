@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Coffee & Kitchen | Luxury Cafe & Bistro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor-glow"></div>
+
+    <header id="header" class="header">
+        <div class="header-container">
+            <a href="#home" class="brand">
+                <img src="assets/logo.png" alt="Craft Coffee & Kitchen Logo" class="logo" onerror="this.style.display='none'">
+                <span class="brand-name">Craft Coffee & Kitchen</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#creations" class="nav-link">Creations</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reservation" class="nav-link">Reservation</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-media-container">
+            <video autoplay muted loop playsinline class="hero-video" onerror="this.style.display='none'">
+                <source src="assets/hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-fallback-img" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <span class="hero-tagline animate-fade-up">☕️ Serving 12pm - 2am</span>
+            <h1 class="hero-heading animate-fade-up">
+                Exquisite Artisan Brews <br>
+                <span class="italic">& Culinary Mastery</span>
+            </h1>
+            <p class="hero-desc animate-fade-up">
+                Step into an atmosphere of understated elegance. Experience handcrafted coffee, artisan meals, and an ambiance designed for the refined palate. Walk-ins are always welcomed warmly.
+            </p>
+            <div class="hero-buttons animate-fade-up">
+                <a href="#creations" class="btn btn-primary magnetic">Explore Creations</a>
+                <a href="#reservation" class="btn btn-outline magnetic">Book Table</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <section id="about" class="about section-padding">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="section-label animate-fade-up">Our Heritage</span>
+                <h2 class="section-heading animate-fade-up">Where Passion Meets the Perfect Pour</h2>
+                <p class="about-intro animate-fade-up">Craft Coffee & Kitchen is a sanctuary for connoisseurs seeking uncompromising quality, sophisticated flavours, and a serene urban retreat.</p>
+                <p class="about-desc animate-fade-up">Open late into the night from 12 PM to 2 AM, our doors welcome those who appreciate exceptional bean selection, meticulous roasting profiles, and gourmet culinary pairings in an exquisite environment.</p>
+                <a href="#reservation" class="btn btn-primary magnetic animate-fade-up">Reserve Your Table</a>
+            </div>
+            <div class="about-image-wrapper animate-fade-up">
+                <div class="image-frame">
+                    <img src="assets/about.jpeg" alt="Craft Coffee Interior" class="about-img" onerror="this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="creations" class="creations section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Signature Selection</span>
+                <h2 class="section-heading">Our Creations</h2>
+            </div>
+
+            <div class="slider-container animate-fade-up">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slide active">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c1.jpeg" alt="Creation 01" onerror="this.src='https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 01</span>
+                            <h3>Signature Pour-Over Espresso</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c2.jpeg" alt="Creation 02" onerror="this.src='https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 02</span>
+                            <h3>Artisanal Caramel Macchiato</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c3.jpeg" alt="Creation 03" onerror="this.src='https://images.unsplash.com/photo-1507133754945-2f943538c227?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 03</span>
+                            <h3>Velvet Dark Mocha Blend</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c4.jpeg" alt="Creation 04" onerror="this.src='https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 04</span>
+                            <h3>Classic Cafe Latte Art</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c5.jpeg" alt="Creation 05" onerror="this.src='https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 05</span>
+                            <h3>Cold Brew Infusion</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c6.jpeg" alt="Creation 06" onerror="this.src='https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 06</span>
+                            <h3>Single-Origin Roast Bean</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c7.jpeg" alt="Creation 07" onerror="this.src='https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 07</span>
+                            <h3>Gourmet Avocado Sourdough</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c8.jpeg" alt="Creation 08" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 08</span>
+                            <h3>Artisanal Bistro Burger</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c9.jpeg" alt="Creation 09" onerror="this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 09</span>
+                            <h3>Wood-Fired Truffle Pizza</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c10.jpeg" alt="Creation 10" onerror="this.src='https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 10</span>
+                            <h3>Decadent Chocolate Lava Cake</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c11.jpeg" alt="Creation 11" onerror="this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 11</span>
+                            <h3>Flaky Butter Croissant</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c12.jpeg" alt="Creation 12" onerror="this.src='https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 12</span>
+                            <h3>Refreshing Citrus Mocktail</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c13.jpeg" alt="Creation 13" onerror="this.src='https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 13</span>
+                            <h3>Matcha Green Tea Latte</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c14.jpeg" alt="Creation 14" onerror="this.src='https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 14</span>
+                            <h3>Chef's Special Pasta Bowl</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img-wrapper">
+                            <img src="assets/c15.jpeg" alt="Creation 15" onerror="this.src='https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-caption">
+                            <span class="creation-num">Creation 15</span>
+                            <h3>Midnight Ambiance Platter</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-btn prev-btn magnetic" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn magnetic" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <div class="slider-pagination" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Visual Journey</span>
+                <h2 class="section-heading">Editorial Gallery</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item item-1 animate-fade-up">
+                    <img src="assets/g1.jpeg" alt="Gallery Image 1" onerror="this.src='https://images.unsplash.com/photo-1445116572614-45fc15b3ef45?auto=format&fit=crop&w=1000&q=80'">
+                    <div class="gallery-overlay"><span>Ambience</span></div>
+                </div>
+                <div class="gallery-item item-2 animate-fade-up">
+                    <img src="assets/g2.jpeg" alt="Gallery Image 2" onerror="this.src='https://images.unsplash.com/photo-1507133754945-2f943538c227?auto=format&fit=crop&w=1000&q=80'">
+                    <div class="gallery-overlay"><span>Aroma</span></div>
+                </div>
+                <div class="gallery-item item-3 animate-fade-up">
+                    <img src="assets/g3.jpeg" alt="Gallery Image 3" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80'">
+                    <div class="gallery-overlay"><span>Craft</span></div>
+                </div>
+                <div class="gallery-item item-4 animate-fade-up">
+                    <img src="assets/g4.jpeg" alt="Gallery Image 4" onerror="this.src='https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1000&q=80'">
+                    <div class="gallery-overlay"><span>Spaces</span></div>
+                </div>
+                <div class="gallery-item item-5 animate-fade-up">
+                    <img src="assets/g5.jpeg" alt="Gallery Image 5" onerror="this.src='https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1000&q=80'">
+                    <div class="gallery-overlay"><span>Moments</span></div>
+                </div>
+                <div class="gallery-item item-6 animate-fade-up">
+                    <img src="assets/g6.jpeg" alt="Gallery Image 6" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80'">
+                    <div class="gallery-overlay"><span>Nights</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Book Your Experience</span>
+                <h2 class="section-heading">Table Reservation</h2>
+                <p class="reservation-sub">Secure your spot for an unforgettable late-night dining and coffee experience.</p>
+            </div>
+
+            <div class="reservation-form-wrapper animate-fade-up">
+                <form id="reservationForm" class="reservation-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="resName">Full Name</label>
+                            <input type="text" id="resName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resPhone">Phone Number</label>
+                            <input type="tel" id="resPhone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resDate">Date</label>
+                            <input type="date" id="resDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resTime">Time (12 PM - 2 AM)</label>
+                            <select id="resTime" required>
+                                <option value="">Select Time Slot</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="02:00 PM">02:00 PM</option>
+                                <option value="04:00 PM">04:00 PM</option>
+                                <option value="06:00 PM">06:00 PM</option>
+                                <option value="08:00 PM">08:00 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                                <option value="12:00 AM">12:00 AM (Midnight)</option>
+                                <option value="01:00 AM">01:00 AM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="resGuests">Number of Guests</label>
+                            <select id="resGuests" required>
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5+">5+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="resNote">Special Requests (Optional)</label>
+                            <input type="text" id="resNote" placeholder="Any preferences or seating notes">
+                        </div>
+                    </div>
+                    <div class="form-submit text-center">
+                        <button type="submit" class="btn btn-primary magnetic">Confirm Reservation Request</button>
+                    </div>
+                </form>
+                <div id="resSuccessMessage" class="res-success-msg" style="display: none;">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Reservation Request Received!</h3>
+                    <p>We look forward to welcoming you at Craft Coffee & Kitchen. Our team will contact you shortly to confirm your booking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-heading">Words From Our Guests</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card magnetic-card animate-fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The absolute best late-night coffee spot in town. The ambiance is unmatched and the artisanal brews are consistently world-class."</p>
+                    <span class="customer-name">— Raghav Sharma</span>
+                </div>
+
+                <div class="review-card magnetic-card animate-fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The new reservation system is seamless, and walk-ins are always welcomed warmly. Their signature cold brew is pure perfection."</p>
+                    <span class="customer-name">— Ananya Rathore</span>
+                </div>
+
+                <div class="review-card magnetic-card animate-fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Open until 2 AM with such exquisite food and sophisticated lighting? Truly a hidden gem in Sardarpura. Highly recommended!"</p>
+                    <span class="customer-name">— Vikramaditya Singh</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Got Questions?</span>
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item magnetic-item animate-fade-up">
+                    <button class="faq-question">
+                        <span>Do you accept table reservations?</span>
+                        <i class="fa-solid fa-plus icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can conveniently reserve your table using our online reservation form above or drop by as a walk-in anytime.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item magnetic-item animate-fade-up">
+                    <button class="faq-question">
+                        <span>What are your operational timings?</span>
+                        <i class="fa-solid fa-plus icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve daily from 12:00 PM straight through to 2:00 AM, making us your ultimate late-night cafe destination.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item magnetic-item animate-fade-up">
+                    <button class="faq-question">
+                        <span>Where are you located?</span>
+                        <i class="fa-solid fa-plus icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We are conveniently situated at C Road, Sardarpura, near Reebok, Jodhpur.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item magnetic-item animate-fade-up">
+                    <button class="faq-question">
+                        <span>Can I host private gatherings or events?</span>
+                        <i class="fa-solid fa-plus icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our expansive space is wonderful for group hangouts. Feel free to reach out via call or WhatsApp for special group bookings.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item magnetic-item animate-fade-up">
+                    <button class="faq-question">
+                        <span>How can I place an enquiry or contact you directly?</span>
+                        <i class="fa-solid fa-plus icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can reach us instantly via phone at 8005640423 or connect with us directly through our WhatsApp button.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-cta">
+        <div class="container text-center animate-fade-up">
+            <span class="section-label light">Connect With Us</span>
+            <h2 class="contact-heading">Bring your idea to life.</h2>
+            <p class="contact-sub">Have a question or want to plan your visit? Reach out to us instantly.</p>
+            
+            <div class="contact-buttons">
+                <a href="https://wa.me/918005640423" target="_blank" class="btn btn-whatsapp magnetic"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a href="tel:8005640423" class="btn btn-call magnetic"><i class="fa-solid fa-phone"></i> Call 8005640423</a>
+                <a href="mailto:info@craftcoffeekitchen.com" class="btn btn-email magnetic"><i class="fa-solid fa-envelope"></i> Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container-fluid map-grid">
+            <div class="map-info animate-fade-up">
+                <span class="section-label">Find Us</span>
+                <h3>Visit Our Cafe</h3>
+                <p class="address-text"><i class="fa-solid fa-location-dot"></i> C Road, Sardarpura Near Reebok, Jodhpur.</p>
+                <p class="map-desc">Step into an ambiance of warmth and rich aroma. Drop by anytime between 12pm and 2am.</p>
+                <a href="https://maps.google.com/?q=C+Road+Sardarpura+Near+Reebok+Jodhpur" target="_blank" class="btn btn-outline magnetic">Open in Google Maps</a>
+            </div>
+            <div class="map-container animate-fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.083391217734!2d73.0185!3d26.2758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTYnMzIuOSJOIDczwrAwMScwNi42IkU!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-brand">
+                <div class="footer-logo-row">
+                    <img src="assets/logo.png" alt="Logo" class="footer-logo" onerror="this.style.display='none'">
+                    <span class="footer-brand-name">Craft Coffee & Kitchen</span>
+                </div>
+                <p class="footer-tagline">Serving exceptional brews & exquisite culinary plates from 12pm to 2am with pure passion.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" class="social-link magnetic"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/918005640423" target="_blank" class="social-link magnetic"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom-info">
+                <p>© 2026 Craft Coffee & Kitchen. All rights reserved.</p>
+                <p class="designer-credit">Designed by Marwar Infotech</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/918005640423" target="_blank" class="floating-whatsapp magnetic" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
